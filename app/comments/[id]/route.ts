@@ -35,9 +35,9 @@ export async function DELETE(
   const index = comments.findIndex(
     (comment) => comment.id === parseInt(params.id)
   );
-  const deletedComment = comments[index];
+  const deletedComment = comments[index];  //  comments massivindən "index" indeksindəki şərhi alir və bu dəyişənə təyin edilir.Bu, silinəcək şərhlidir.
     
-  comments.splice(index, 1); 
-  return Response.json(deletedComment);
+  comments.splice(index, 1);    // (splice): Massivdən müəyyən bir indeksdən başlayaraq müəyyən sayda elementi çıxarır.
+  return Response.json(deletedComment);  //  Silinən şərhl, JSON formatında bir HTTP cavabı olaraq qaytarılır. 
 
 }
