@@ -1,7 +1,7 @@
 import { type NextRequest } from "next/server";
 
 export async function GET(request: NextRequest) {
-  const requestHeaders = new Headers(request.headers); 
+  const requestHeaders = new Headers(request.headers);
 
   const theme = request.cookies.get("theme");
   console.log(requestHeaders.get("Authorization"));

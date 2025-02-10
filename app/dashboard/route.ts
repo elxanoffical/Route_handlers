@@ -1,3 +1,3 @@
-export async function GET(){
-  return new Response("Dashboard Data")
+export async function GET() {
+  return new Response("Dashboard Data");
 }
